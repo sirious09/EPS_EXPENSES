@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dgm:gDiagram xmlns:dgm="http://xmlns.oracle.com/sca/soadgm">
     <dgm:gReference name="selectDivision">
-        <dgm:body borderWidth="2" arcRad="20" X="1182" Y="198" width="136" height="84">
+        <dgm:body borderWidth="2" arcRad="20" X="1260" Y="103" width="136" height="84">
             <dgm:borderColor r="153" g="153" b="153"/>
             <dgm:bgColor r="255" g="255" b="255"/>
         </dgm:body>
-        <dgm:shadow arcRad="20" X="1172" Y="191" width="156" height="98">
+        <dgm:shadow arcRad="20" X="1250" Y="96" width="156" height="98">
             <dgm:bgColor r="196" g="228" b="240"/>
         </dgm:shadow>
         <dgm:inputPort name="selectDivision" X="-10" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/pcbpel/adapter/db/EPS_EXPENSES/ExpensesReportBPS/selectDivision#wsdl.interface(selectDivision_ptt)"/>
@@ -15,61 +15,41 @@
         </dgm:operations>
     </dgm:gReference>
     <dgm:gComponent name="ProcessExpensesReportBPS">
-        <dgm:body borderWidth="2" arcRad="20" X="333" Y="83" width="130" height="111">
+        <dgm:body borderWidth="2" arcRad="20" X="420" Y="42" width="130" height="86">
             <dgm:borderColor r="69" g="113" b="140"/>
             <dgm:lightBgColor r="166" g="208" b="230"/>
             <dgm:darkBgColor r="99" g="162" b="201"/>
         </dgm:body>
-        <dgm:shadow arcRad="20" X="323" Y="76" width="150" height="127">
+        <dgm:shadow arcRad="20" X="410" Y="35" width="150" height="102">
             <dgm:bgColor r="196" g="228" b="240"/>
         </dgm:shadow>
         <dgm:outputPort name="HumanTasks.RequestReportData.reference" X="120" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
-        <dgm:outputPort name="HumanTasks.Humantask_Teste.reference" X="120" Y="40" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
-        <dgm:outputPort name="Services.Externals.SelectDivision.reference" X="120" Y="65" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/pcbpel/adapter/db/EPS_EXPENSES/ExpensesReportBPS/selectDivision#wsdl.interface(selectDivision_ptt)"/>
+        <dgm:outputPort name="Services.Externals.SelectDivision.reference" X="120" Y="40" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/pcbpel/adapter/db/EPS_EXPENSES/ExpensesReportBPS/selectDivision#wsdl.interface(selectDivision_ptt)"/>
         <dgm:nodeIcon URI="/oracle/bpm/fusion/soa/msg/images/bpmncomponent20x20.png" X="10" Y="4" width="20" height="20"/>
     </dgm:gComponent>
     <dgm:gComponent name="RequestReportData">
-        <dgm:body borderWidth="2" arcRad="20" X="666" Y="26" width="130" height="61">
+        <dgm:body borderWidth="2" arcRad="20" X="840" Y="26" width="130" height="61">
             <dgm:borderColor r="109" g="136" b="65"/>
             <dgm:lightBgColor r="201" g="224" b="155"/>
             <dgm:darkBgColor r="157" g="195" b="93"/>
         </dgm:body>
-        <dgm:shadow arcRad="20" X="656" Y="19" width="150" height="77">
-            <dgm:bgColor r="196" g="228" b="240"/>
-        </dgm:shadow>
-        <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
-        <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
-    </dgm:gComponent>
-    <dgm:gComponent name="Humantask_Teste">
-        <dgm:body borderWidth="2" arcRad="20" X="666" Y="121" width="130" height="61">
-            <dgm:borderColor r="109" g="136" b="65"/>
-            <dgm:lightBgColor r="201" g="224" b="155"/>
-            <dgm:darkBgColor r="157" g="195" b="93"/>
-        </dgm:body>
-        <dgm:shadow arcRad="20" X="656" Y="114" width="150" height="77">
+        <dgm:shadow arcRad="20" X="830" Y="19" width="150" height="77">
             <dgm:bgColor r="196" g="228" b="240"/>
         </dgm:shadow>
         <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
         <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
     </dgm:gComponent>
     <dgm:gWireLink source="ProcessExpensesReportBPS/HumanTasks.RequestReportData.reference" target="RequestReportData/TaskService" width="2">
-        <dgm:gSegment X1="473" Y1="108" X2="497" Y2="108"/>
-        <dgm:gSegment X1="497" Y1="108" X2="497" Y2="51"/>
-        <dgm:gSegment X1="497" Y1="51" X2="656" Y2="51"/>
-        <dgm:baseColor r="153" g="153" b="153"/>
-        <dgm:selectedColor r="49" g="106" b="196"/>
-    </dgm:gWireLink>
-    <dgm:gWireLink source="ProcessExpensesReportBPS/HumanTasks.Humantask_Teste.reference" target="Humantask_Teste/TaskService" width="2">
-        <dgm:gSegment X1="473" Y1="133" X2="512" Y2="133"/>
-        <dgm:gSegment X1="512" Y1="133" X2="512" Y2="146"/>
-        <dgm:gSegment X1="512" Y1="146" X2="656" Y2="146"/>
+        <dgm:gSegment X1="560" Y1="67" X2="584" Y2="67"/>
+        <dgm:gSegment X1="584" Y1="67" X2="584" Y2="51"/>
+        <dgm:gSegment X1="584" Y1="51" X2="830" Y2="51"/>
         <dgm:baseColor r="153" g="153" b="153"/>
         <dgm:selectedColor r="49" g="106" b="196"/>
     </dgm:gWireLink>
     <dgm:gWireLink source="ProcessExpensesReportBPS/Services.Externals.SelectDivision.reference" target="selectDivision" width="2">
-        <dgm:gSegment X1="473" Y1="158" X2="497" Y2="158"/>
-        <dgm:gSegment X1="497" Y1="158" X2="497" Y2="208"/>
-        <dgm:gSegment X1="497" Y1="208" X2="1172" Y2="208"/>
+        <dgm:gSegment X1="560" Y1="92" X2="584" Y2="92"/>
+        <dgm:gSegment X1="584" Y1="92" X2="584" Y2="113"/>
+        <dgm:gSegment X1="584" Y1="113" X2="1250" Y2="113"/>
         <dgm:baseColor r="153" g="153" b="153"/>
         <dgm:selectedColor r="49" g="106" b="196"/>
     </dgm:gWireLink>

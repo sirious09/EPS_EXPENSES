@@ -1,19 +1,19 @@
-2017-03-27 21:05:49.179/1.498 Oracle Coherence 12.2.1.2.0 <Info> (thread=main, member=n/a): Loaded operational configuration from "jar:file:/C:/oracle/SOA12.2/coherence/lib/coherence.jar!/tangosol-coherence.xml"
-2017-03-27 21:05:49.221/1.540 Oracle Coherence 12.2.1.2.0 <Info> (thread=main, member=n/a): Loaded operational overrides from "jar:file:/C:/oracle/SOA12.2/coherence/lib/coherence.jar!/tangosol-coherence-override-dev.xml"
-2017-03-27 21:05:49.222/1.542 Oracle Coherence 12.2.1.2.0 <D5> (thread=main, member=n/a): Optional configuration override "/tangosol-coherence-override.xml" is not specified
-2017-03-27 21:05:49.224/1.543 Oracle Coherence 12.2.1.2.0 <D5> (thread=main, member=n/a): Optional configuration override "cache-factory-config.xml" is not specified
-2017-03-27 21:05:49.225/1.544 Oracle Coherence 12.2.1.2.0 <D5> (thread=main, member=n/a): Optional configuration override "cache-factory-builder-config.xml" is not specified
-2017-03-27 21:05:49.226/1.545 Oracle Coherence 12.2.1.2.0 <D5> (thread=main, member=n/a): Optional configuration override "/custom-mbeans.xml" is not specified
+2017-03-27 21:47:47.691/1.589 Oracle Coherence 12.2.1.2.0 <Info> (thread=main, member=n/a): Loaded operational configuration from "jar:file:/C:/oracle/SOA12.2/coherence/lib/coherence.jar!/tangosol-coherence.xml"
+2017-03-27 21:47:47.744/1.641 Oracle Coherence 12.2.1.2.0 <Info> (thread=main, member=n/a): Loaded operational overrides from "jar:file:/C:/oracle/SOA12.2/coherence/lib/coherence.jar!/tangosol-coherence-override-dev.xml"
+2017-03-27 21:47:47.746/1.643 Oracle Coherence 12.2.1.2.0 <D5> (thread=main, member=n/a): Optional configuration override "/tangosol-coherence-override.xml" is not specified
+2017-03-27 21:47:47.749/1.646 Oracle Coherence 12.2.1.2.0 <D5> (thread=main, member=n/a): Optional configuration override "cache-factory-config.xml" is not specified
+2017-03-27 21:47:47.750/1.647 Oracle Coherence 12.2.1.2.0 <D5> (thread=main, member=n/a): Optional configuration override "cache-factory-builder-config.xml" is not specified
+2017-03-27 21:47:47.752/1.649 Oracle Coherence 12.2.1.2.0 <D5> (thread=main, member=n/a): Optional configuration override "/custom-mbeans.xml" is not specified
 
 Oracle Coherence Version 12.2.1.2.0 Build 65221
  Grid Edition: Development mode
 Copyright (c) 2000, 2016, Oracle and/or its affiliates. All rights reserved.
 
-2017-03-27 21:05:49.328/1.647 Oracle Coherence GE 12.2.1.2.0 <Info> (thread=main, member=n/a): Created cache factory com.tangosol.net.DefaultConfigurableCacheFactory
-2017-03-27 21:05:49.970/2.289 Oracle Coherence GE 12.2.1.2.0 <Info> (thread=main, member=n/a): The cluster name has not been configured, a value of "jazevedo's cluster" has been automatically generated
-mar 27, 2017 9:05:50 PM oracle.soa.scac.ValidateComposite loadWSDLs
+2017-03-27 21:47:47.892/1.788 Oracle Coherence GE 12.2.1.2.0 <Info> (thread=main, member=n/a): Created cache factory com.tangosol.net.DefaultConfigurableCacheFactory
+2017-03-27 21:47:48.575/2.472 Oracle Coherence GE 12.2.1.2.0 <Info> (thread=main, member=n/a): The cluster name has not been configured, a value of "jazevedo's cluster" has been automatically generated
+mar 27, 2017 9:47:49 PM oracle.soa.scac.ValidateComposite loadWSDLs
 WARNING: Validating WSDLs from WSDLManager....  with option UseSoaInfraMds:false
-mar 27, 2017 9:05:50 PM oracle.fabric.common.wsdl.SchemaManager isIncrementalBuildSupported
+mar 27, 2017 9:47:49 PM oracle.fabric.common.wsdl.SchemaManager isIncrementalBuildSupported
 INFO: XMLSchema incremental build enabled.
 Java HotSpot(TM) 64-Bit Server VM warning: ignoring option PermSize=32m; support was removed in 8.0
 Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0

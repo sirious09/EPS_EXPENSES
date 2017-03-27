@@ -22,14 +22,6 @@
                <label locale="en">End</label>
             </labels>
          </topicDocumentation>
-         <topicDocumentation name="ACT18905127184468">
-            <labels>
-               <label locale="en">Teste User</label>
-            </labels>
-            <descriptions>
-               <description locale="en"></description>
-            </descriptions>
-         </topicDocumentation>
          <topicDocumentation name="ACT18905222850697">
             <labels>
                <label locale="en">ServiceTask</label>
@@ -40,7 +32,6 @@
          </topicDocumentation>
          <topicDocumentation name="sf18904541530213"/>
          <topicDocumentation name="sf18904541530255"/>
-         <topicDocumentation name="sf18905132594391"/>
          <topicDocumentation name="sf18905226841644"/>
       </topicDocumentations>
    </component>

@@ -3,7 +3,9 @@
                 Package="teste_ui.pageDefs">
   <parameters/>
   <executables>
-    <variableIterator id="variables"/>
+    <variableIterator id="variables">
+      <variable Name="divisionName" Type="java.lang.String"/>
+    </variableIterator>
     <methodIterator Binds="getTaskDetails.result" DataControl="TESTE_UI_RequestReportData" RangeSize="25"
                     BeanClass="TESTE_UI_RequestReportData.getTaskDetails" id="getTaskDetailsIterator"/>
     <accessorIterator MasterBinding="getTaskDetailsIterator" Binds="task" RangeSize="25"
@@ -37,7 +39,7 @@
                       DataControl="TESTE_UI_RequestReportData"
                       BeanClass="TESTE_UI_RequestReportData.ucmMetadataItemType" id="ucmMetadataItemIterator"
                       StateValidation="false"/>
-    <iterator Binds="DivisionView1" RangeSize="25" DataControl="AppModuleDataControl" id="DivisionView1Iterator"/>
+    <iterator Binds="DivisionView1" RangeSize="-1" DataControl="AppModuleDataControl" id="DivisionView1Iterator"/>
   </executables>
   <bindings>
     <methodAction id="getTaskDetails" RequiresUpdateModel="true" Action="invokeMethod" MethodName="getTaskDetails"
@@ -480,5 +482,21 @@
     </tree>
     <list IterBinding="DivisionView1Iterator" StaticList="false" Uses="LOV_DivisionName" id="DivisionName"
           DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+    <list StaticList="false" IterBinding="variables" ListIter="DivisionView1Iterator" id="divisionName1">
+      <AttrNames>
+        <Item Value="divisionName"/>
+      </AttrNames>
+      <ListAttrNames>
+        <Item Value="DivisionName"/>
+      </ListAttrNames>
+      <ListDisplayAttrNames>
+        <Item Value="DivisionName"/>
+      </ListDisplayAttrNames>
+    </list>
+    <attributeValues IterBinding="variables" id="divisionName2">
+      <AttrNames>
+        <Item Value="divisionName"/>
+      </AttrNames>
+    </attributeValues>
   </bindings>
 </pageDefinition>
