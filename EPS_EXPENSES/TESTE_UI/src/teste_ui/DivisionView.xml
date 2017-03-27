@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="DivisionView"
+  Version="12.2.1.16.48"
+  InheritPersonalization="merge"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  SelectList="Division.DIVISION_NAME"
+  FromList="DIVISION Division">
+  <ViewAccessor
+    Name="AppModule_DivisionView1_1"
+    ViewObjectName="teste_ui.DivisionView"
+    AMUsageName="AppModule"
+    ViewInstanceName="DivisionView1"
+    RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="DivisionView1"
+    ViewObjectName="teste_ui.DivisionView"
+    RowLevelBinds="true"/>
+  <ListBinding
+    Name="LOV_DivisionName"
+    ListVOName="DivisionView1"
+    NullValueFlag="start"
+    NullValueId="${adfBundle['oracle.javatools.resourcebundle.SystemBundle']['NULL_VALUE_RESID']}"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="DivisionName"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="DivisionName"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="DivisionName"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <EntityUsage
+    Name="Division"
+    Entity="teste_ui.Division"/>
+  <ViewAttribute
+    Name="DivisionName"
+    PrecisionRule="true"
+    EntityAttrName="DivisionName"
+    EntityUsage="Division"
+    AliasName="DIVISION_NAME"
+    LOVName="LOV_DivisionName">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="choice"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
+</ViewObject>

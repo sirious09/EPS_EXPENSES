@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.16.48" id="DataBindings"
+             SeparateXMLFiles="false" Package="teste_ui" ClientType="Generic">
+  <pageMap>
+    <page path="/RequestReportData_Form.jspx" usageId="teste_ui_RequestReportData_FormPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="teste_ui_RequestReportData_FormPageDef" path="teste_ui.pageDefs.RequestReportData_FormPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="TESTE_UI_RequestReportData" path="teste_ui.TESTE_UI_RequestReportData"/>
+  </dataControlUsages>
+</Application>

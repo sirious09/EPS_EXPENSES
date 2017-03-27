@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tas:taskFormUiContext xmlns:tas="http://xmlns.oracle.com/taskformui">
+  <tas:taskFormName>RequestReportData_Form</tas:taskFormName>
+  <tas:taskFlowName>RequestReportData_TaskFlow</tas:taskFlowName>
+  <tas:templateType>packaged</tas:templateType>
+  <tas:packagedTemplate>default</tas:packagedTemplate>
+  <tas:header>
+    <tas:headerCustomActions>true</tas:headerCustomActions>
+    <tas:headerSystemActions>true</tas:headerSystemActions>
+    <tas:headerColumnCount>1</tas:headerColumnCount>
+    <tas:headerAttribList/>
+  </tas:header>
+  <tas:body>
+    <tas:title/>
+    <tas:rowList>
+      <tas:row>
+        <tas:column/>
+      </tas:row>
+    </tas:rowList>
+  </tas:body>
+  <tas:footer>
+    <tas:comments>true</tas:comments>
+    <tas:attachments>true</tas:attachments>
+    <tas:history>true</tas:history>
+  </tas:footer>
+</tas:taskFormUiContext>

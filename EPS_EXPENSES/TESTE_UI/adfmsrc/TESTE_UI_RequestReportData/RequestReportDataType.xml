@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.16.48" id="RequestReportDataType"
+          Package="TESTE_UI_RequestReportData" BeanClass="TESTE_UI_RequestReportData.RequestReportDataType"
+          isJavaBased="false">
+  <Attribute Name="consultant" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="nextSibling" Value="reportDate"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Consultant"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="consultant"/>
+        <Property Name="targetNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="reportDate" Type="java.sql.Date">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="nextSibling" Value="expenseDate"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Report Date"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="reportDate"/>
+        <Property Name="targetNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="type" Value="date"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="expenseDate" Type="java.sql.Date">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="nextSibling" Value="projectList"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Expense Date"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="expenseDate"/>
+        <Property Name="targetNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="type" Value="date"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="description" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="nextSibling" Value="originalAmount"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Description"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="description"/>
+        <Property Name="targetNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="originalAmount" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="nextSibling" Value="currencyList"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Original Amount"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="originalAmount"/>
+        <Property Name="targetNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="receipt" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Receipt"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="receipt"/>
+        <Property Name="targetNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <AccessorAttribute id="divisionList" IsCollection="true" BeanClass="TESTE_UI_RequestReportData.divisionListType"
+                     CollectionBeanClass="TESTE_UI_RequestReportData.divisionListType_divisionList_Operations">
+    <Properties>
+      <Property Name="nextSiblingNamespace"
+                Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+      <Property Name="nextSibling" Value="consultant"/>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Division List"/>
+      <Property Name="nillable" Value="true"/>
+      <Property Name="originalName" Value="divisionList"/>
+      <Property Name="targetNamespace"
+                Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="projectList" IsCollection="true" BeanClass="TESTE_UI_RequestReportData.projectListType"
+                     CollectionBeanClass="TESTE_UI_RequestReportData.projectListType_projectList_Operations">
+    <Properties>
+      <Property Name="nextSiblingNamespace"
+                Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+      <Property Name="nextSibling" Value="description"/>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Project List"/>
+      <Property Name="nillable" Value="true"/>
+      <Property Name="originalName" Value="projectList"/>
+      <Property Name="targetNamespace"
+                Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="currencyList" IsCollection="true" BeanClass="TESTE_UI_RequestReportData.currencyListType"
+                     CollectionBeanClass="TESTE_UI_RequestReportData.currencyListType_currencyList_Operations">
+    <Properties>
+      <Property Name="nextSiblingNamespace"
+                Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+      <Property Name="nextSibling" Value="receipt"/>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Currency List"/>
+      <Property Name="nillable" Value="true"/>
+      <Property Name="originalName" Value="currencyList"/>
+      <Property Name="targetNamespace"
+                Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

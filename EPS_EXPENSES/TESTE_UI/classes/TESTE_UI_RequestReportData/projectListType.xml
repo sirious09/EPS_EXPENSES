@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.16.48" id="projectListType"
+          Package="TESTE_UI_RequestReportData" BeanClass="TESTE_UI_RequestReportData.projectListType"
+          isJavaBased="false">
+  <Attribute Name="projectName" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Project Name"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="projectName"/>
+        <Property Name="targetNamespace"
+                  Value="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+</JavaBean>

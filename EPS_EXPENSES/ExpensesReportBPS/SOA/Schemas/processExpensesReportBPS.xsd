@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"
+            targetNamespace="http://com.eproseed.epsexpenses/BusinessProcessService/Core/ProcessExpensesReport/V1/Schema"
+            elementFormDefault="qualified">
+<xsd:element name="RequestReportData" type="RequestReportDataType"/>
+<xsd:complexType name="RequestReportDataType">
+        <xsd:sequence>
+            <xsd:element name="divisionList" nillable="true" type="divisionListType" maxOccurs="unbounded"/>
+            <xsd:element name="consultant" nillable="true" type="xsd:string"/>
+            <xsd:element name="reportDate" nillable="true" type="xsd:date"/>
+            <xsd:element name="expenseDate" nillable="true" type="xsd:date"/>
+            <xsd:element name="projectList" nillable="true" type="projectListType" maxOccurs="unbounded"/>
+            <xsd:element name="description" nillable="true" type="xsd:string"/>
+            <xsd:element name="originalAmount" nillable="true" type="xsd:string"/>
+            <xsd:element name="currencyList" nillable="true" type="currencyListType" maxOccurs="unbounded"/>
+            <xsd:element name="receipt" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="projectListType">
+      <xsd:sequence>
+         <xsd:element name="projectName" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+    <xsd:complexType name="divisionListType">
+      <xsd:sequence>
+         <xsd:element name="devisionName" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+       <xsd:complexType name="currencyListType">
+      <xsd:sequence>
+         <xsd:element name="currencyName" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:element name="ResponseReportData" type="ResponseReportDataType"/>
+<xsd:complexType name="ResponseReportDataType">
+        <xsd:sequence>
+            <xsd:element name="review" nillable="true" type="xsd:string"/>
+            <xsd:element name="reason" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
