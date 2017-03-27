@@ -34,14 +34,14 @@
             </bpmnext:OracleExtensions>
         </bpmn:extensionElements>
         <bpmn:laneSet>
-            <bpmn:lane name="Role" id="lane1">
+            <bpmn:lane name="Requester" id="lane1">
                 <bpmn:extensionElements>
                     <bpmnext:OracleExtensions>
                         <bpmnext:GraphicsAttributes backgroundColor="-1761607681">
                             <bpmnext:Position x="0" y="0"/>
                             <bpmnext:Size width="200" height="0"/>
                         </bpmnext:GraphicsAttributes>
-                        <bpmnext:LaneAttributes roleId="Role"/>
+                        <bpmnext:LaneAttributes roleId="Requester"/>
                         <bpmnext:FeatureSet/>
                     </bpmnext:OracleExtensions>
                 </bpmn:extensionElements>
@@ -67,6 +67,7 @@
                         <bpmnext:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <bpmnext:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <bpmnext:StringFeature value="INITIATOR" name="humanTaskType"/>
+                        <bpmnext:StringFeature value="" name="reinitiateSource"/>
                     </bpmnext:FeatureSet>
                     <bpmnext:HumanTask>
                         <bpmnext:humanTaskRef refType="namespaced" name="RequestReportData" namespace="http://xmlns.oracle.com/EPS_EXPENSES/ExpensesReportBPS/RequestReportData" elementType="TYPE" implementationType="humanTask"/>
@@ -157,7 +158,7 @@
                     </bpmn:to>
                 </bpmn:assignment>
             </bpmn:dataOutputAssociation>
-            <bpmn:resourceRole name="Role" id="lane1"/>
+            <bpmn:resourceRole name="Requester" id="lane1"/>
         </bpmn:userTask>
         <bpmn:startEvent isInterrupting="false" name="Start" id="EVT18904541530218">
             <bpmn:extensionElements>
