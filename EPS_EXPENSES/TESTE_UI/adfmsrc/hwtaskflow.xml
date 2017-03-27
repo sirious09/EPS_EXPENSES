@@ -8,4 +8,4 @@
       <httpPort/>
       <httpsPort/>
    </TaskFlowServer>
-<hwTaskFlow><WorkflowName>RequestReportData</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/EPS_EXPENSES/ExpensesReportBPS/RequestReportData</TaskDefinitionNamespace><TaskFlowId>RequestReportData_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/RequestReportData_TaskFlow.xml</TaskFlowFileName></hwTaskFlow></hwTaskFlows>
+<hwTaskFlow><WorkflowName>RequestReportData</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/EPS_EXPENSES/ExpensesReportBPS/RequestReportData</TaskDefinitionNamespace><TaskFlowId>RequestReportData_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/RequestReportData_TaskFlow.xml</TaskFlowFileName></hwTaskFlow><hwTaskFlow><WorkflowName>Humantask_Teste</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/EPS_EXPENSES/ExpensesReportBPS/Humantask_Teste</TaskDefinitionNamespace><TaskFlowId>Humantask_Teste_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/Humantask_Teste_TaskFlow.xml</TaskFlowFileName></hwTaskFlow></hwTaskFlows>

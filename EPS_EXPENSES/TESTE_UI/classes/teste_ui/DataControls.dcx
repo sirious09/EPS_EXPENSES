@@ -14,4 +14,17 @@
                       DocumentStoreConfiguration="false"/>
     </Source>
   </AdapterDataControl>
+  <AdapterDataControl id="TESTE_UI_Humantask_Teste" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition" SupportsTransactions="true"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false" Definition="TESTE_UI_Humantask_Teste"
+                      BeanClass="TESTE_UI_Humantask_Teste" xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task"
+                      SchemaLocation="file:/C:/REPOS_GITHUB/EPROSEED_INTERNAL/EPS_EXPENSES/ExpensesReportBPS/SOA/Schemas/Humantask_TesteWorkflowTask.xsd"
+                      RootElement="task" rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task"
+                      taskLoc="../ExpensesReportBPS/SOA/HumanTasks/Humantask_Teste.task" InitiationTask="false"
+                      DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
 </DataControlConfigs>

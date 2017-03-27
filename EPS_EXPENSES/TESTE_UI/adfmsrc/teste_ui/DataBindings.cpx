@@ -3,9 +3,11 @@
              SeparateXMLFiles="false" Package="teste_ui" ClientType="Generic">
   <pageMap>
     <page path="/RequestReportData_Form.jspx" usageId="teste_ui_RequestReportData_FormPageDef"/>
+    <page path="/Humantask_Teste_TaskDetails.jspx" usageId="teste_ui_Humantask_Teste_TaskDetailsPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="teste_ui_RequestReportData_FormPageDef" path="teste_ui.pageDefs.RequestReportData_FormPageDef"/>
+    <page id="teste_ui_Humantask_Teste_TaskDetailsPageDef" path="teste_ui.pageDefs.Humantask_Teste_TaskDetailsPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <dc id="TESTE_UI_RequestReportData" path="teste_ui.TESTE_UI_RequestReportData"/>

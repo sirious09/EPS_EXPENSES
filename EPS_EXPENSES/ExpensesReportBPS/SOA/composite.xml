@@ -13,6 +13,8 @@
            xmlns:sca-ext="http://xmlns.oracle.com/sca/1.0-ext">
   <import namespace="http://xmlns.oracle.com/bpel/workflow/taskService"
           location="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl" importType="wsdl"/>
+  <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/EPS_EXPENSES/ExpensesReportBPS/selectDivision"
+          location="WSDLs/selectDivision.wsdl" importType="wsdl"/>
   <property name="productVersion" type="xs:string" many="false">12.2.1.2.0.161003</property>
   <property name="compositeID" type="xs:string" many="false">ebcce602-fc20-4c15-b4e7-eafa204aab6e</property>
   <component name="ProcessExpensesReportBPS">
@@ -22,6 +24,14 @@
                  ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
         <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
                         callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </reference>
+      <reference name="HumanTasks.Humantask_Teste.reference"
+                 ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                        callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </reference>
+      <reference name="Services.Externals.SelectDivision.reference" ui:wsdlLocation="WSDLs/selectDivision.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/pcbpel/adapter/db/EPS_EXPENSES/ExpensesReportBPS/selectDivision#wsdl.interface(selectDivision_ptt)"/>
       </reference>
     </componentType>
     <property name="bpel.config.oneWayDeliveryPolicy" type="xs:string" many="false">sync</property>
@@ -36,8 +46,33 @@
       </service>
     </componentType>
   </component>
+  <component name="Humantask_Teste">
+    <implementation.workflow src="HumanTasks/Humantask_Teste.task"/>
+    <componentType>
+      <service name="TaskService" ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                        callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </service>
+    </componentType>
+  </component>
+  <reference name="selectDivision" ui:wsdlLocation="WSDLs/selectDivision.wsdl">
+    <interface.wsdl interface="http://xmlns.oracle.com/pcbpel/adapter/db/EPS_EXPENSES/ExpensesReportBPS/selectDivision#wsdl.interface(selectDivision_ptt)"/>
+    <binding.jca config="Adapters/selectDivision_db.jca"/>
+    <property name="jca.retry.count" type="xs:int" many="false" override="may">4</property>
+    <property name="jca.retry.interval" type="xs:int" many="false" override="may">1</property>
+    <property name="jca.retry.backoff" type="xs:int" many="false" override="may">2</property>
+    <property name="jca.retry.maxInterval" type="xs:int" many="false" override="may">120</property>
+  </reference>
   <wire>
     <source.uri>ProcessExpensesReportBPS/HumanTasks.RequestReportData.reference</source.uri>
     <target.uri>RequestReportData/TaskService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>ProcessExpensesReportBPS/HumanTasks.Humantask_Teste.reference</source.uri>
+    <target.uri>Humantask_Teste/TaskService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>ProcessExpensesReportBPS/Services.Externals.SelectDivision.reference</source.uri>
+    <target.uri>selectDivision</target.uri>
   </wire>
 </composite>
