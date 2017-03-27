@@ -9,5 +9,10 @@
   </pageDefinitionUsages>
   <dataControlUsages>
     <dc id="TESTE_UI_RequestReportData" path="teste_ui.TESTE_UI_RequestReportData"/>
+    <BC4JDataControl id="AppModuleDataControl" Package="teste_ui"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
   </dataControlUsages>
 </Application>

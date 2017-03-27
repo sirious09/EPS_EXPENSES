@@ -37,6 +37,7 @@
                       DataControl="TESTE_UI_RequestReportData"
                       BeanClass="TESTE_UI_RequestReportData.ucmMetadataItemType" id="ucmMetadataItemIterator"
                       StateValidation="false"/>
+    <iterator Binds="DivisionView1" RangeSize="25" DataControl="AppModuleDataControl" id="DivisionView1Iterator"/>
   </executables>
   <bindings>
     <methodAction id="getTaskDetails" RequiresUpdateModel="true" Action="invokeMethod" MethodName="getTaskDetails"
@@ -477,5 +478,7 @@
         </AttrNames>
       </nodeDefinition>
     </tree>
+    <list IterBinding="DivisionView1Iterator" StaticList="false" Uses="LOV_DivisionName" id="DivisionName"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
   </bindings>
 </pageDefinition>

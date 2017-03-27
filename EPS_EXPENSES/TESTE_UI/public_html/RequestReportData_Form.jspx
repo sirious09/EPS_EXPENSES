@@ -5,6 +5,7 @@
             xmlns:wf="http://xmlns.oracle.com/bpel/workflow/workflow-taglib.tld"
             xmlns:wlc="http://xmlns.oracle.com/bpel/workflow/worklist">
         <af:document title="RequestReportData_Form.jspx" id="d1">
+            <af:messages id="m1"/>
             <af:resource type="javascript" source="/jsLibs/commonBPM.js"/>
             <af:resource type="javascript" source="/jsLibs/taskDetailsWithTemplate.js"/>
             <af:resource type="javascript" source="/jsLibs/commonBPM.js"/>
@@ -204,7 +205,18 @@
                         <af:panelGroupLayout layout="vertical" inlineStyle="padding:5px;" id="pglBody">
                             <af:panelGroupLayout layout="horizontal" inlineStyle="padding: 5px;width:95%;" valign="top"
                                                  id="pgl4">
-                                <af:panelFormLayout id="colregionPanel1_1" inlineStyle="padding: 5px;"/>
+                                <af:panelFormLayout id="colregionPanel1_1" inlineStyle="padding: 5px;">
+                                    <af:panelFormLayout id="pfl9">
+                                        <af:selectOneChoice value="#{bindings.DivisionName.inputValue}"
+                                                            label="#{bindings.DivisionName.label}"
+                                                            required="#{bindings.DivisionName.hints.mandatory}"
+                                                            shortDesc="#{bindings.DivisionName.hints.tooltip}"
+                                                            id="soc4">
+                                            <f:selectItems value="#{bindings.DivisionName.items}" id="si8"/>
+                                            <f:validator binding="#{bindings.DivisionName.validator}"/>
+                                        </af:selectOneChoice>
+                                    </af:panelFormLayout>
+                                </af:panelFormLayout>
                             </af:panelGroupLayout>
                         </af:panelGroupLayout>
                     </f:facet>
